@@ -1,8 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import topicsReducer from "../features/topics/topicsSlice";
+import quizzesReducer from "../features/quizzes/quizzesSlice";
+import cardsReducer from "../features/cards/cardsSlice.js";
 
-export const store = configureStore({
+export default configureStore({
   reducer: {
-    counter: counterReducer,
+    topics: topicsReducer,
+    quizzes: quizzesReducer,
+    cards: cardsReducer,
   },
 });
