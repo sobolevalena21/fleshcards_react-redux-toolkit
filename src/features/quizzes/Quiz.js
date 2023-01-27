@@ -1,4 +1,6 @@
-// The Quiz component uses the react-router-dom method useParams() to determine the quizId to render. Therefore, it needs the full set of quizzes to find the appropriate quiz object to render. >> need to use useSelector to get all the quizzes in state
+// Used: when you click on the earlier created Quiz in the list of Quizzes, the Quiz details populate the window.
+
+//The Quiz component uses the react-router-dom method useParams() to determine the quizId to render. Therefore, it needs the full set of quizzes to find the appropriate quiz object to render. >> need to use useSelector to get all the quizzes in state
 
 import { Link, useParams } from "react-router-dom";
 import Card from "../cards/Card";
